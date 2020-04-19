@@ -11,17 +11,9 @@ int* plusOne(int* number, int size, int *len1)
         result[i] = result[i]+sum%10;
     }
     
-    if (carry == 0) 
+    if (carry == 1)
     {
-        while (result[0] == 0) 
-        {
-            *len1 -= 1;
-            result++;
-        }
-    }
-    else
-    {
-        *len1 = size+1;
+      //  *len1 = size+1;
         for (i = size; i > 0; i--)
         {
             result[i] = result[i-1];
@@ -30,4 +22,5 @@ int* plusOne(int* number, int size, int *len1)
     }
     
     return result;
-}
+}   
+    
