@@ -123,7 +123,7 @@ int main(){
     int data;
     
     while(1){
-        cout << "1: Insert  2: Inorder Traversal 3: Find min  4: Find max  5:Finf Height 6:Delete 7: Exit \n";
+        cout << "1: Insert  2: Inorder Traversal 3: Find min  4: Find max  5:Find Height 6:Delete 7: Exit \n";
         int choose;
         cin >> choose;
         
@@ -151,6 +151,7 @@ int main(){
                     cout << "Data to be deleted.\n";
                     cin >> data;
                     root = Delete(root, data);
+                    break;
             case 7:
                     exit(0);
             default:
